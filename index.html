@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TOP SPIN CLUB — stol tennisi to'garagi" />
+  <title>TOP SPIN CLUB</title>
+  <style>
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      background:#08111f;
+      color:#fff;
+      line-height:1.6;
+    }
+    .container{width:min(1100px,92%);margin:auto}
+    header{
+      background:#0c1b2d;
+      border-bottom:1px solid #1d3348;
+      position:sticky;top:0;z-index:10;
+    }
+    nav{
+      min-height:70px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+    .logo{font-size:24px;font-weight:800}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{color:#c9d5df;text-decoration:none}
+    .hero{
+      padding:90px 0;
+      background:linear-gradient(135deg,#08111f,#0d2740);
+    }
+    .hero h1{
+      font-size:clamp(40px,7vw,72px);
+      line-height:1.05;
+      margin:0 0 18px;
+    }
+    .hero p{max-width:700px;color:#b8c6d4;font-size:19px}
+    .btn{
+      display:inline-block;
+      background:#2dd4bf;
+      color:#06231f;
+      padding:13px 20px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      margin-top:15px;
+    }
+    section{padding:70px 0}
+    h2{font-size:34px;margin-top:0}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    .card{
+      background:#10263b;
+      border:1px solid #1e3a52;
+      border-radius:18px;
+      padding:24px;
+    }
+    .card p{color:#b8c6d4}
+    .schedule-wrap{overflow:auto}
+    table{
+      width:100%;
+      min-width:700px;
+      border-collapse:collapse;
+      background:#10263b;
+      border-radius:16px;
+      overflow:hidden;
+    }
+    th,td{
+      padding:15px;
+      border-bottom:1px solid #203d55;
+      text-align:left;
+    }
+    th{background:#12334b;color:#73eadb}
+    .form-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+    input,select,textarea{
+      width:100%;
+      padding:14px;
+      border-radius:10px;
+      border:1px solid #294a64;
+      background:#0b1d2d;
+      color:#fff;
+    }
+    textarea{grid-column:1/-1;min-height:110px}
+    button{
+      grid-column:1/-1;
+      border:0;
+      cursor:pointer;
+      background:#2dd4bf;
+      color:#06231f;
+      padding:14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    footer{
+      border-top:1px solid #1d3348;
+      padding:30px 0;
+      color:#9fb0c0;
+    }
+    @media(max-width:800px){
+      .grid{grid-template-columns:1fr}
+      .menu{display:none}
+      .form-box{grid-template-columns:1fr}
+      textarea,button{grid-column:1}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">🏓 TOP SPIN CLUB</div>
+        <div class="menu">
+          <a href="#about">Biz haqimizda</a>
+          <a href="#schedule">Jadval</a>
+          <a href="#price">Narxlar</a>
+          <a href="#contact">Bog'lanish</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Stol tennisi — tezlik, aniqlik va xarakter.</h1>
+        <p>Bolalar va kattalar uchun professional mashg'ulotlar. Kichik guruhlar, tajribali murabbiylar va qulay jadval.</p>
+        <a class="btn" href="#contact">Sinov darsiga yozilish</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Nima uchun TOP SPIN?</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>To'g'ri texnika</h3>
+            <p>Zarba, oyoq harakati va taktik fikrlash bosqichma-bosqich o'rgatiladi.</p>
+          </div>
+          <div class="card">
+            <h3>Kichik guruhlar</h3>
+            <p>Har bir ishtirokchiga murabbiy yetarli vaqt ajratadi.</p>
+          </div>
+          <div class="card">
+            <h3>Musobaqalar</h3>
+            <p>Ichki turnirlar va kuchli o'yinchilar uchun alohida tayyorgarlik.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container">
+        <h2>Mashg'ulotlar jadvali</h2>
+        <div class="schedule-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Guruh</th>
+                <th>Kunlar</th>
+                <th>Vaqt</th>
+                <th>Daraja</th>
+                <th>Yosh</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Start</td><td>Dush / Chor / Juma</td><td>15:00–16:00</td><td>Boshlang'ich</td><td>7–11</td></tr>
+              <tr><td>Junior Pro</td><td>Sesh / Pay / Shan</td><td>16:30–18:00</td><td>O'rta</td><td>10–15</td></tr>
+              <tr><td>Adult Start</td><td>Dush / Chor / Juma</td><td>19:00–20:00</td><td>Boshlang'ich</td><td>16+</td></tr>
+              <tr><td>Adult Pro</td><td>Sesh / Pay / Shan</td><td>19:30–21:00</td><td>Ilg'or</td><td>16+</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="price">
+      <div class="container">
+        <h2>Abonementlar</h2>
+        <div class="grid">
+          <div class="card"><h3>START</h3><p><b>350 000 so'm / oy</b></p><p>Haftasiga 2 marta.</p></div>
+          <div class="card"><h3>ACTIVE</h3><p><b>500 000 so'm / oy</b></p><p>Haftasiga 3 marta.</p></div>
+          <div class="card"><h3>PERSONAL</h3><p><b>150 000 so'm / dars</b></p><p>Individual mashg'ulot.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Sinov darsiga yoziling</h2>
+        <form class="form-box" onsubmit="submitForm(event)">
+          <input id="name" type="text" placeholder="Ismingiz" required />
+          <input id="phone" type="tel" placeholder="+998 90 123 45 67" required />
+          <select id="group">
+            <option>Bolalar guruhi</option>
+            <option>Kattalar guruhi</option>
+            <option>Individual dars</option>
+          </select>
+          <select id="level">
+            <option>Boshlovchi</option>
+            <option>O'rta daraja</option>
+            <option>Ilg'or</option>
+          </select>
+          <textarea id="note" placeholder="Qo'shimcha izoh"></textarea>
+          <button type="submit">Ariza yuborish</button>
+        </form>
+        <p id="result"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 TOP SPIN CLUB</div>
+  </footer>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      document.getElementById('result').textContent =
+        name + ", arizangiz qabul qilindi.";
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
